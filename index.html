@@ -8,6 +8,31 @@
   </head>
   <body>
     <div id="app"></div>
+    <h1>Min Todo-lista</h1>
+
+
+    <!-- Formulär för att lägga till nya uppgifter -->
+    <div class="add-todo">
+      <input type="text" id="todo-input" placeholder="Lägg till ny uppgift" />
+      <button id="add-btn">Lägg till</button>
+    </div>
+
+
+    <!-- filter knapp-->
+    <div class="filters">
+      <button id="filter-all" class="active">Alla</button>
+      <button id="filter-active">Aktiva</button>
+      <button id="filter-completed">Klara</button>
+    </div>
+
+    <!--Lista med todo-->
+    <ul id="todo-list"></ul>
+
+    <!--Rensa alla knapp-->
+    <button id="clear-all">Rensa alla</button>
+    
+
+     
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
