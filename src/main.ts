@@ -24,10 +24,14 @@ function renderTodos(): void {
     li.className = todo.completed ? 'completed' : '';
     
     li.innerHTML = `
-      <input type="checkbox" ${todo.completed ? 'checked' : ''} data-id="${todo.id}" class="toggle-checkbox" />
-      <span class="todo-text" data-id="${todo.id}">${todo.text}</span>
-      <button class="edit-btn" data-id="${todo.id}">Ändra</button>
-      <button class="delete-btn" data-id="${todo.id}">Ta bort</button>
+      <div class="todo-top">
+        <input type="checkbox" ${todo.completed ? 'checked' : ''} data-id="${todo.id}" class="toggle-checkbox" />
+        <span class="todo-text" data-id="${todo.id}">${todo.text}</span>
+      </div>
+      <div class="todo-buttons">
+        <button class="edit-btn" data-id="${todo.id}">Ändra</button>
+        <button class="delete-btn" data-id="${todo.id}">Ta bort</button>
+      </div>
     `;
 
     todoList.appendChild(li);
