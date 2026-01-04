@@ -1,6 +1,6 @@
 import './styles/style.css';
 import { TodoService } from './services/TodoService';
-import type { Todo } from './models/todo';
+
 
 const todoService = new TodoService();
 let currentFilter: 'all' | 'active' | 'completed' = 'all';
