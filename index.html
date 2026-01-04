@@ -2,36 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>u05-todolist</title>
+    <title>Min Todo-lista</title>
   </head>
   <body>
-    <div id="app"></div>
-    <h1>Min Todo-lista</h1>
+    <div id="app">
+      <h1>Min Todo-lista</h1>
 
+      <!-- Formulär för att lägga till nya uppgifter -->
+      <div class="add-todo">
+        <input type="text" id="todo-input" placeholder="Lägg till ny uppgift" />
+        <button id="add-btn">Lägg till</button>
+      </div>
 
-    <!-- Formulär för att lägga till nya uppgifter -->
-    <div class="add-todo">
-      <input type="text" id="todo-input" placeholder="Lägg till ny uppgift" />
-      <button id="add-btn">Lägg till</button>
+      <!-- Filter knappar -->
+      <div class="filters">
+        <button id="filter-all" class="active">Alla</button>
+        <button id="filter-active">Aktiva</button>
+        <button id="filter-completed">Klara</button>
+      </div>
+
+      <!-- Lista med todos -->
+      <ul id="todo-list"></ul>
+
+      <!-- Rensa alla knapp -->
+      <button id="clear-all">Rensa alla</button>
     </div>
-
-
-    <!-- filter knapp-->
-    <div class="filters">
-      <button id="filter-all" class="active">Alla</button>
-      <button id="filter-active">Aktiva</button>
-      <button id="filter-completed">Klara</button>
-    </div>
-
-    <!--Lista med todo-->
-    <ul id="todo-list"></ul>
-
-    <!--Rensa alla knapp-->
-    <button id="clear-all">Rensa alla</button>
-    
-
      
     <script type="module" src="/src/main.ts"></script>
   </body>
